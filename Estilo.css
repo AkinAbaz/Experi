@@ -5,9 +5,8 @@ html{
 	font-size:18px;
 }
 body{
-    
-    background:#ccc url(https://cdn.cssauthor.com/wp-content/uploads/2017/06/Free-Watercolor-Textures.jpg) center top no-repeat;
-	background-size:100%;
+	background-color: #fff;
+    background-size:100%;
 	background-attachment:fixed;
 }
 a, a img{
@@ -19,16 +18,25 @@ img{
 	height:auto;
 }
 .principal{
-	width: 960px;
+	width: 100%;
+	height: 690px;
+	background-position: 60% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
 	color: #444;
 	margin: 0 auto;
 	font-family:sans-serif;
+	background-image: url('Imagens/header-infopreta.png');
+}
+.borda {
+	margin-left: 92px;
+	margin-right: 92px;
 }
 .cabecalho, 
 .logo, 
 .rodape,
 .menu{
-	width:100%;
+	width:960px;
 	display:block;
 	clear:both;
 }
@@ -42,9 +50,16 @@ img{
 	font-size:50px;
 	font-style:italic;
 	text-decoration:none;
-	color:#000;
+	color:rgb(255, 255, 255);
 	display:block;
 	padding:20px 0 0 0;
+}
+img.desaturate { 
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 }
 .pesquisa{
 	float:right;
@@ -52,7 +67,7 @@ img{
 	margin-right:10px;
 }
 .menu{
-	background:#f88d00;
+	background:none;
 }
 .menu ul li, 
 .menu ul{
@@ -87,21 +102,7 @@ img{
 	z-index:-1;
 	content:'';
 }
-.barra-lateral{
-	float:right;
-}
-.barra-lateral, .barra-lateral:before{
-	width:30%;
-}
-.barra-lateral:before{
-   content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-	right:0;
-    z-index: -1;
-    background: #f1f1f1;
-}
+
 .espacamento{
 	padding:20px;
 }
