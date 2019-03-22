@@ -1,42 +1,34 @@
 html{
-	margin:  0; 
-	padding: 0;
 	font-size:18px;
+	font-family: 'Open Sans', sans-serif;
 }
 body{
-	width: 1440px;
-  height: 4964px;
+  margin: 0;
+  width: 100%;
+  height: auto;
   background-color: #f8f9fc;
 }
 a, a img{
 	text-decoration:none;
 	border:none;
 }
-img{
-	max-width:100%;
-	height:auto;
-}
 .principle{
 	width: 100%;
 	height: 690px;
 	background-position: 60% 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-	color: #444;
+    background-repeat: no-repeat;
+    background-size: cover;
 	margin: 0 auto;
-	font-family:sans-serif;
 	background-image: url('Imagens/header-infopreta.png');
 }
 .border {
 	margin-left: 92px;
 	margin-right: 92px;
 }
-
 .header, 
 .logo, 
 .footer,
 .menu{
-	width:960px;
 	display:block;
 	clear:both;
 }
@@ -44,7 +36,8 @@ img{
 	height:100px;
 }
 .logo-header{
-		float:left;
+	margin: 15px 0 0 0;
+	float:left;
 }
 .logo-header a{
 	font-size:50px;
@@ -55,7 +48,7 @@ img{
 	padding:20px 0 0 0;
 	vertical-align: top;
 	margin-right: 20px;
-  margin-top: 15px;
+  	
 }
 .menu{
 	
@@ -77,13 +70,12 @@ img{
 }
 .headertop{
 	float:right;
-	margin-top: -30px;
+	margin: 5px 0 0 0;
 }
 
 .Title{
 	width: 674px;
 	height: 130px;
-	font-family: OpenSans;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -96,7 +88,6 @@ img{
 	}
 .Index{
 	width: 542px;
-  font-family: OpenSans;
   font-size: 16px;
   font-style: normal;
   font-stretch: normal;
@@ -110,16 +101,14 @@ img{
 .Button{
 	width: 200px;
 	height: 60px;
-	border-radius: 5px;
-  box-shadow: 0 -8px 34px 0 rgba(31, 219, 132, 0.6);
+	border: none;
+	border-radius: 15px 0 15px 0;
+	box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
 	background-color: #1fdb84;
 	}
 .TextButton{
-	width: 120px;
-  height: 24px;
-  font-family: OpenSans;
   font-size: 18px;
-  font-weight: bold;
+  font-style: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -154,3 +143,50 @@ img{
 	padding:20px;
 	text-align:center;
 }
+
+  .secondscreen {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
+  
+  
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  /* The Modal (background) */
+.window {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .window-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
