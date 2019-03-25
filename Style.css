@@ -163,4 +163,26 @@ body{
 	padding: 20px;
 	border: 1px solid #888;
 	width: 80%;
-  }
+	}
+.maps{
+	z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y;
+}
+.Talk{
+	width: 250px;
+	height: 350px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000;
+	}
