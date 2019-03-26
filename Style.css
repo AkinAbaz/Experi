@@ -1,188 +1,220 @@
-html{
-	font-size:18px;
-	font-family: 'Open Sans', sans-serif;
-}
-body{
-  margin: 0;
-  width: 100%;
-  height: auto;
-  background-color: #f8f9fc;
+html {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.principle{
-	height: 690px;
-	background-position: 60% 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-	margin: 0 auto;
-	background-image: url('Imagens/header-infopreta.png');
-}
-.border {
-	margin-left: 92px;
-	margin-right: 92px;
-}
-.header, 
-.logo, 
-.footer,
-.menu{
-	display:block;
-	clear:both;
-}
-.header{
-	height:100px;
-}
-.logo-header{
-	margin: 15px 0 0 0;
-	float:left;
-}
-.logo-header a{
-	font-size:50px;
-	font-style:italic;
-	text-decoration:none;
-	color:rgb(255, 255, 255);
-	display:inline-block;
-	padding:20px 0 0 0;
-	vertical-align: top;
-	margin-right: 20px;
-  	
-}
-.menu{
-	
-	background:none;
-}
-.menu ul li, 
-.menu ul{
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.menu ul li{
-	display:inline-block;
-}
-.menu ul li a{
-	display:inline-block;
-	color:#fff;
-	padding:13px 20px;
-}
-.headertop{
-	float:right;
-	margin: 5px 0 0 0;
-}
-
-.Title{
-	width: 674px;
-	height: 130px;
-	font-weight: bold;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	color: #ffffff;
-	}
-.Title{
-	font-weight: normal;
-	}
-.Index{
-	width: 542px;
-  font-size: 16px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  color: #ffffff;
-	}
-.Index{
-	font-weight: 600;
-}
-.Button{
-	width: 200px;
-	height: 60px;
-	border: none;
-	border-radius: 15px 0 15px 0;
-	box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
-	background-color: #1fdb84;
-	}
-.TextButton{
-  font-size: 18px;
-  font-style: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
-
-.espacamento{
-	padding:20px;
-}
-.footer{
-	padding:20px;
-	text-align:center;
-}
-
-  .secondscreen {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-  }
-  
-  
-  .close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-  }
-.window {
-	display: none; 
-	position: fixed; 
-	z-index: 1; 
-	padding-top: 100px;
-	left: 0;
-	top: 0;
-	width: 100%; 
-	height: 100%; 
-	overflow: auto; 
-	background-color: rgb(0,0,0); 
-	background-color: rgba(0,0,0,0.4); 
-  }
-  
-.window-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-	}
-.maps{
-	z-index: 3;
-    position: absolute;
-    height: 100%;
+body {
+    margin: 0;
     width: 100%;
-    padding: 0px;
-    border-width: 0px;
-    margin: 0px;
-    left: 0px;
-    top: 0px;
+    height: auto;
+    background-color: #f8f9fc;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.principle {
+    height: 690px;
+    background-position: 60% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-image: url('Imagens/header-infopreta.png');
+}
+
+.border {
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+.header,
+.logo,
+.footer,
+.menu {
+    display: block;
+    clear: both;
+}
+
+.header {
+    height: 100px;
+}
+
+.logo-header {
+    margin: 15px 0 0 0;
+    float: left;
+}
+
+.logo-header a {
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 20px 0 0 0;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.menu {
+    background: none;
+}
+
+.menu ul li,
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 13px 20px;
+}
+
+.headertop {
+    float: right;
+    margin: 5px 0 0 0;
+}
+
+.Title {
+    width: 674px;
+    height: 130px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.Title {
+    font-weight: normal;
+}
+
+.Index {
+    width: 542px;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.Index {
+    font-weight: 600;
+}
+
+.Button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+    background-color: #1fdb84;
+}
+
+.whatsapp {
+    width: 250px;
+    height: 68px;
+    border: none;
+}
+
+.TextButton {
+    font-size: 18px;
+    font-style: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.espacamento {
+    padding: 20px;
+}
+
+.espacamento-menor {
+    padding: 12px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.secondscreen {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.window-content {
+    background-color: #fefefe;
+    margin: auto;
+    border-radius: 8px;
+    padding: 26px;
+    border: 1px solid #888;
+    width: 55%;
+}
+
+.div-content {
+    float: left;
+    margin: 0 45px 0 0;
+}
+
+.maps {
+    height: 450px;
+    width: 540px;
+    margin-top: 10px;
+    display: inline-block;
     touch-action: pan-x pan-y;
 }
-.Talk{
-	width: 250px;
-	height: 350px;
-	font-weight: bold;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	color: #000;
-	}
+
+.Talk {
+    width: 250px;
+    height: 350px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+}
