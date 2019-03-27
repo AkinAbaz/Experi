@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -8,10 +9,6 @@ body {
     width: 100%;
     height: auto;
     background-color: #f8f9fc;
-}
-
-h3 {
-    font-weight: bold;
 }
 
 .principle {
@@ -28,6 +25,19 @@ h3 {
     margin-right: 92px;
 }
 
+h1 {
+    font-weight: bold
+}
+
+h2 {
+    font-weight: bold
+}
+
+.top-description {
+    font-size: 16px;
+    font-weight: lighter
+}
+
 .header,
 .logo,
 .footer,
@@ -37,6 +47,7 @@ h3 {
 }
 
 .header {
+    padding-top: 40px;
     height: 100px;
 }
 
@@ -93,10 +104,6 @@ h3 {
     color: #ffffff;
 }
 
-.Title {
-    font-weight: normal;
-}
-
 .Index {
     width: 542px;
     font-size: 16px;
@@ -105,9 +112,6 @@ h3 {
     line-height: 2;
     letter-spacing: normal;
     color: #ffffff;
-}
-
-.Index {
     font-weight: 600;
 }
 
@@ -128,11 +132,6 @@ h3 {
 
 .TextButton {
     font-size: 18px;
-    font-style: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
 }
@@ -143,6 +142,35 @@ h3 {
 
 .espacamento-menor {
     padding: 12px;
+}
+
+.line-green {
+    width: 60px;
+    height: 4px;
+    background-color: #1fdb84;
+}
+
+.float-retangle {
+    margin-top: -98px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .footer {
@@ -161,7 +189,6 @@ h3 {
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -175,13 +202,13 @@ h3 {
 .window {
     display: none;
     position: fixed;
+    overflow: scroll;
     z-index: 1;
     padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -208,13 +235,112 @@ h3 {
     touch-action: pan-x pan-y;
 }
 
-.Talk {
-    width: 250px;
-    height: 350px;
+.content {
+    margin: 86px 191px 86px 191px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #7e8085;
+}
+
+.title-project {
+    font-size: 34px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
+    line-height: 1.35;
+    text-align: center;
+    color: #031d5b;
+}
+
+.subtitle-project {
+    font-size: 24px;
+    font-weight: 600;
+    color: #031d5b;
+}
+
+.img-project {
+    width: 576px;
+    height: 696px;
+    float: left;
+    padding-right: 72px;
+}
+
+.info {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #7e8085;
+}
+
+
+/* Ajustes para responsividade (Considerar mínimo Iphone 4) */
+
+@media screen and (max-width: 980px) {
+    .float-retangle .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+        &:nth-last-child(2) {
+            margin-right: 0;
+        }
+        &:last-child {
+            flex-basis: 100%;
+            margin: 0;
+        }
+    }
+    .img-project {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .float-retangle .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Title {
+        width: 100%;
+    }
+    .espacamento {
+        padding: 12px;
+    }
+    .espacamento-menor {
+        padding: 0px;
+    }
+    .top-description {
+        font-size: 13px;
+    }
+    .window {
+        padding-top: 20px;
+    }
+    .window-content {
+        width: 90%;
+        max-height: calc(100vh - 10px);
+        padding: 8px;
+    }
+    .maps {
+        width: 100%;
+        height: calc(50vh - 60px);
+        margin-top: 8px;
+    }
+    .border {
+        margin-left: 23px;
+        margin-right: 8px;
+    }
+    .headertop {
+        /* remover ao fazer o menu responsivo */
+        display: none;
+    }
+    .content {
+        margin: 23px 42px 23px 42px;
+    }
 }
