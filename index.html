@@ -114,7 +114,7 @@
             InfoPreta: Um Projeto Social
         </h2>
 
-        <img src="Imagens/Logo-white.png" class="img-project" />
+        <img src="Imagens/infopreta-buh-dangelo.jpg" class="img-project" />
 
         <div>
             <div class="column">
@@ -139,7 +139,7 @@
         </div>
     </div>
 
-    <button class="buttonSubscribe" id="myBtnSubs">
+    <button class="Button" id="myBtnSubs">
         <p class="TextButton">Inscreva-se!</p>
     </button>
 
@@ -151,164 +151,113 @@
 
             <div class="div-contentSubs">
                 <form name="input" action="html_form_action.asp" method="get">
+                <form method="post" action="mailto:infopreta.evoluindo@gmail.com">
+                
                     <p>
                         Nome Completo: <span>*</span>
                         <input type="text" name="name" value="" size="100" required></input>
-                    </p>
+                        </p>
 
-                    <br> E-mail: (Campo Obrigátorio)
+                    <p> E-mail:
 
                     <input type="email" name="email" value="" placeholder="nome@email.com" required></input>
 
-                    <br>
-                    <label for="phonenum">Telefone Celular: (Campo Obrigátorio):</label>
-                    <input id="phonenum" type="tel" placeholder="(XX)XXXXX XXXX" pattern="^\d{9}-\d{4}$" required>
+                    </p>
+                    <p>
+                    <label for="phonenum">Telefone Celular:</label>
+                    <input id="phonenum" type="tel" required>
+                    </p>
 
-                    <br> Nome do Curso: (Campo Obrigátorio)
+                    <p> Nome do Curso:
 
                     <input type="text" name="curso" value="" size="50"></input>
 
-                    <br> Instituição de Ensino: (Campo Obrigátorio)
+                    </p>
+                    <p> Instituição de Ensino:
 
                     <input type="text" name="instituição" value="" size="60"></input>
 
+                    </p>
+                    <p> <label for="gender-select">Gênero:( com qual se identifica?)</label>
+                    <select id="gender-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Não-Binário">Não-Binário</option>
+                        <option value="Mulher Trans">Mulher Trans</option>
+                        <option value="Homem Trans">Homem Trans</option>
+                        <option value="Travesti">Travesti</option>
+                    </select>
                     <br>
-                    <br> Gênero(Opções Abaixo - Campo Alternativo)
-
-                    <br>
-
-                    <input type="radio" name="sex" value="male"></input>
-
-                    Masculino
-
-                    <br>
-
-                    <input type="radio" name="sex" value="female"></input>
-
-                    Feminino
-
-                    <br>
-
-                    <input type="radio" name="sex" value="non-binary"></input>
-
-                    Não-Binário
-
-                    <br>
-
-                    <input type="radio" name="sex" value="Transfemale"></input>
-
-                    Mulher Trans
-
-                    <br>
-
-                    <input type="radio" name="sex" value="Transmale"></input>
-
-                    Homem Trans
-
-                    <br>
-
-                    <input type="radio" name="sex" value="Travesti"></input>
-
-                    Travesti
-
-                    <br> Nenhuma das anteriores.(Descreva aqui)
-
+                    Nenhuma das anteriores.(Descreva aqui)
                     <input type="text" name="anothersex" value="" size="20"></input>
 
-                    <br> Auto-declaração: (Opções Abaixo - Campo Alternativo)
+                    </p> 
+                    <p> <label for="etnic-select">Auto-declaração:</label>
+                    <select id="etnic-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="Pessoa Branca">Pessoa Branca</option>
+                        <option value="Pessoa Negra">Pessoa Negra</option>
+                        <option value="Pessoa Ìndigena">Pessoa Ìndigena</option>
+                    </select>
+                    </p>
 
-                    <br>
+                    <p><label for="kids-select">Tem filhos?</label>
+                    <select id="kids-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                    </p>
 
-                    <input type="radio" name="sex" value="white"></input>
+                    <p><label for="public-select">Universidade Pública:</label>
+                    <select id="public-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                    </p>
 
-                    Brancx
+                    <p> 
+                    <label for="wich-select">Se não, qual tipo de gratuidade:</label>
+                    <select id="wich-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="Prouni">Prouni</option>
+                        <option value="Fies">Fies</option>
+                        <option value="Bolsista">Bolsista</option>
+                    </select>
+                    </p>
 
-                    <br>
+                    <p> <label for="live-select">Mora com quantas pessoas:</label>
+                    <select id="live-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="0a2">0 á 2 pessoas</option>
+                        <option value="3a5">3 á 5 pessoas</option>
+                        <option value="6a8">6 á 8 pessoas</option>
+                        <option value="9a12">9 á 12 pessoas</option>
+                        <option value="13a16">13 á 16 pessoas</option>
+                    </select>
+                    </p>
 
-                    <input type="radio" name="sex" value="black"></input>
-
-                    Negrx
-
-                    <br>
-
-                    <input type="radio" name="sex" value="indix"></input>
-
-                    Ìndix
-
-                    <br> Tem filhos? (Opções Abaixo - Campo Alternativo)
-
-                    <br>
-
-                    <input type="radio" name="sex" value="yes"></input>
-
-                    Sim
-
-                    <br>
-
-                    <input type="radio" name="sex" value="no"></input>
-
-                    Não
-
-                    <br> Universidade Pública: (Opções Abaixo - Campo Alternativo)
-
-                    <br>
-
-                    <input type="radio" name="sex" value="yes"></input>
-
-                    Sim
-
-                    <br>
-
-                    <input type="radio" name="sex" value="no"></input>
-
-                    Não
-
-                    <br> Se não, qual tipo de gratuidade: (Opções Abaixo - Campo Alternativo)
-
-                    <br>
-
-                    <input type="radio" name="sex" value="prouni"></input>
-
-                    Prouni
-
-                    <br>
-
-                    <input type="radio" name="sex" value="fies"></input>
-
-                    Fies
-
-                    <br>
-
-                    <input type="radio" name="sex" value="bolsista"></input>
-
-                    Bolsista
-
-                    <br> Mora com quantas pessoas: (Campo Alternativo)
-
-                    <input type="text" name="people" value="" size="10"></input>
-
-                    <br> Renda familiar: (Opções abaixo - Campo alternativo )
-
-                    <br>
-
-                    <input type="radio" name="sex" value="onefortwo"></input>
-
-                    De 1 a 2 salários mínimos
-
-                    <br>
-
-                    <input type="radio" name="sex" value="twoforfour"></input>
-
-                    De 2 a 4 salários mínimos
-
-                    <br>
-
-                    <input type="radio" name="sex" value="fourforsix"></input>
-
-                    De 4 a 6 salários mínimos
-
-                    <br>
+                    <p> 
+                    <label for="famoney-select">Renda familiar:</label>
+                    <select id="famoney-select">
+                        <option value="">Escolha uma Opção:</option>
+                        <option value="De 1 a 2 salários mínimos">De 1 a 2 salários mínimos</option>
+                        <option value="De 2 a 4 salários mínimos">De 2 a 4 salários mínimos</option>
+                        <option value="De 4 a 6 salários mínimos">De 4 a 6 salários mínimos</option>
+                    </select>
+                    </p>
+                    <div class="6u 12u(2)">
+                            <input type="checkbox" id="human" Nome="human" checked required>
+                            <label for="human">Sou humano</label>
+                        </div>
+                    <p>
+                    <input type="reset" value="Limpar" class="alt" />
                     <input type="submit" value="Enviar">
+                    </p>
+                     
+                </form>
                 </form>
             </div>
 
