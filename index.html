@@ -2,18 +2,16 @@
 <html>
 
 <head>
-    <<<<<<< HEAD <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="Style.css"></link>
-    =======
     <meta charset="UTF-8"></meta>
 
     <link rel="stylesheet" type="text/css" href="Style.css"></link>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"></link>
-    >>>>>>> develop
-
+    
     <title>InfoPreta</title>
 </head>
 
@@ -84,24 +82,24 @@
 
     <div class="float-retangle border">
         <div class="column">
-            <h3 class="subtitle-project">1st Content Area</h3>
+            <h3 class="subtitle-project">Manutenção de Notebooks e Desktops</h3>
             <div class="line-green"></div>
             <p class="info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae?
+                Conserte seu equipamento da HP, Dell, Samsung, Apple, Asus, Sony Vaio, CCE, Compaq, entre outras marcas.
             </p>
         </div>
         <div class="column">
-            <h3 class="subtitle-project">2nd Content Area</h3>
+            <h3 class="subtitle-project">Laudos Técnicos e Orçamentos</h3>
             <div class="line-green"></div>
             <p class="info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto necessitatibus cum praesentium dolor totam voluptatibus recusandae? Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum.
+                Fazemos laudos e orçamentos com maior precisão e, claro, que cabem no seu bolso com muita qualidade.
             </p>
         </div>
         <div class="column">
-            <h3 class="subtitle-project">3rd Content Area</h3>
+            <h3 class="subtitle-project">Formatação e Backup de Computadores</h3>
             <div class="line-green"></div>
             <p class="info">
-                Illo quod nemo ratione itaque dolores laudantium error vero laborum blanditiis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione architecto cum praesentium voluptatibus recusandae?
+                Formatamos com sistema operacional Windows, Mac, Linux com qualidade, rapidez e amor.
             </p>
         </div>
     </div>
@@ -114,7 +112,7 @@
             InfoPreta: Um Projeto Social
         </h2>
 
-        <img src="Imagens/infopreta-buh-dangelo.jpg" class="img-project" />
+        <img src="Imagens/Placa.jpeg" class="img-project border" />
 
         <div>
             <div class="column">
@@ -138,10 +136,11 @@
             </div>
         </div>
     </div>
-
+    <center>
     <button class="Button" id="myBtnSubs">
         <p class="TextButton">Inscreva-se!</p>
     </button>
+    </center>
 
     <div class="window" id="janela2">
         <div class="window-content">
@@ -170,16 +169,16 @@
 
                     <p> Nome do Curso:
 
-                    <input type="text" name="curso" value="" size="50"></input>
+                    <input type="text" name="curso" value="" size="50" required></input>
 
                     </p>
                     <p> Instituição de Ensino:
 
-                    <input type="text" name="instituição" value="" size="60"></input>
+                    <input type="text" name="instituição" value="" size="60" required></input>
 
                     </p>
-                    <p> <label for="gender-select">Gênero:( com qual se identifica?)</label>
-                    <select id="gender-select">
+                    <p> <label for="gender-select" >Gênero:( com qual se identifica?)</label>
+                    <select id="gender-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="Masculino">Masculino</option>
                         <option value="Feminino">Feminino</option>
@@ -190,11 +189,11 @@
                     </select>
                     <br>
                     Nenhuma das anteriores.(Descreva aqui)
-                    <input type="text" name="anothersex" value="" size="20"></input>
+                    <input type="text" name="anothersex" value="" size="20" required></input>
 
                     </p> 
                     <p> <label for="etnic-select">Auto-declaração:</label>
-                    <select id="etnic-select">
+                    <select id="etnic-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="Pessoa Branca">Pessoa Branca</option>
                         <option value="Pessoa Negra">Pessoa Negra</option>
@@ -203,7 +202,7 @@
                     </p>
 
                     <p><label for="kids-select">Tem filhos?</label>
-                    <select id="kids-select">
+                    <select id="kids-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
@@ -211,7 +210,7 @@
                     </p>
 
                     <p><label for="public-select">Universidade Pública:</label>
-                    <select id="public-select">
+                    <select id="public-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
@@ -220,7 +219,7 @@
 
                     <p> 
                     <label for="wich-select">Se não, qual tipo de gratuidade:</label>
-                    <select id="wich-select">
+                    <select id="wich-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="Prouni">Prouni</option>
                         <option value="Fies">Fies</option>
@@ -229,7 +228,7 @@
                     </p>
 
                     <p> <label for="live-select">Mora com quantas pessoas:</label>
-                    <select id="live-select">
+                    <select id="live-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="0a2">0 á 2 pessoas</option>
                         <option value="3a5">3 á 5 pessoas</option>
@@ -241,17 +240,13 @@
 
                     <p> 
                     <label for="famoney-select">Renda familiar:</label>
-                    <select id="famoney-select">
+                    <select id="famoney-select" required>
                         <option value="">Escolha uma Opção:</option>
                         <option value="De 1 a 2 salários mínimos">De 1 a 2 salários mínimos</option>
                         <option value="De 2 a 4 salários mínimos">De 2 a 4 salários mínimos</option>
                         <option value="De 4 a 6 salários mínimos">De 4 a 6 salários mínimos</option>
                     </select>
                     </p>
-                    <div class="6u 12u(2)">
-                            <input type="checkbox" id="human" Nome="human" checked required>
-                            <label for="human">Sou humano</label>
-                        </div>
                     <p>
                     <input type="reset" value="Limpar" class="alt" />
                     <input type="submit" value="Enviar">
