@@ -112,7 +112,7 @@
             InfoPreta: Um Projeto Social
         </h2>
 
-        <img src="Imagens/Placa.jpeg" class="img-project border" />
+        <img src="Imagens/Placa.jpeg" class="img-project" />
 
         <div>
             <div class="column">
@@ -149,7 +149,7 @@
             <h2>Preencha seus dados abaixo:</h2>
 
             <div class="div-contentSubs">
-                <form name="input" action="html_form_action.asp" method="get">
+                <form name="input" action="mailto:infopreta.evoluindo@gmail.com" method="get">
                 <form method="post" action="mailto:infopreta.evoluindo@gmail.com">
                 
                     <p>
@@ -189,12 +189,12 @@
                     </select>
                     <br>
                     Nenhuma das anteriores.(Descreva aqui)
-                    <input type="text" name="anothersex" value="" size="20" required></input>
+                    <input type="text" name="anothersex" value="" size="20"></input>
 
                     </p> 
                     <p> <label for="etnic-select">Auto-declaração:</label>
                     <select id="etnic-select" required>
-                        <option value="">Escolha uma Opção:</option>
+                        <option class="menutest" value="">Escolha uma Opção:</option>
                         <option value="Pessoa Branca">Pessoa Branca</option>
                         <option value="Pessoa Negra">Pessoa Negra</option>
                         <option value="Pessoa Ìndigena">Pessoa Ìndigena</option>
@@ -247,7 +247,36 @@
                         <option value="De 4 a 6 salários mínimos">De 4 a 6 salários mínimos</option>
                     </select>
                     </p>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="4194304" required/>
+                    RG:
+                    <input type="file" />
                     <p>
+                        </p>
+                        <input type="hidden" name="MAX_FILE_SIZE" value="4194304" required/>
+                        CPF:
+                        <input type="file" />
+                        (Campo Obrigatório)
+                        <p>
+                            </p>
+                            <input type="hidden" name="MAX_FILE_SIZE" value="4194304" required/>
+                            Comprovante de Endereço:
+                            <input type="file" />
+                            <p>
+                                </p>
+                                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" required/>
+                                Comprovante de Renda:
+                                <input type="file" />
+                                <p>
+                                    </p>
+                                    <input type="hidden" name="MAX_FILE_SIZE" value="4194304" required/>
+                                    Comprovante de Matricula:
+                                    <input type="file" />
+                                    <p>
+                                        </p>
+                                        <input type="hidden" name="MAX_FILE_SIZE" value="4194304" required/>
+                                        Boletim do último semestre:
+                                        <input type="file" />
+                                        <p>
                     <input type="reset" value="Limpar" class="alt" />
                     <input type="submit" value="Enviar">
                     </p>
